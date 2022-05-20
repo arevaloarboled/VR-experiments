@@ -46,3 +46,8 @@ When all experiments are over, run `/Assets/Resources/Collect.R` to collect all 
 ## Sequence diagram of the experiment
 
 ![Alt text](sequence.png?raw=true "Input mapping")
+
+## Authors
+- Mayu Tsukamoto
+- Camilo Arevalo
+- Julián Villegas
