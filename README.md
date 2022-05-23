@@ -1,12 +1,16 @@
 # VR-experiments
 
-This system was developed to perform a subjective evaluation of audio stimulus in VR. To keep listeners focused on the audio stimulus, all visual component is removed and their head orientation is tracked to ensure their right posture of them while listening to the stimulus. After the listeners were exposed to the stimulus, the system allows them to accurately record the auditory path of audio sources perceived respective to the listener's head. 
+This system was developed to perform a subjective evaluation of audio stimuli in VR. All visual components were removed to keep listeners focused on the audio stimulus. The orientation of the listener’s head is tracked to ensure the correct posture while listening to the stimuli. The system allows the listeners to record the auditory path corresponding to the stimulus relative to the listener’s head after exposition.
 
-This system is composed of 2 elements: R and Unity. While R through **psychTestR** collects experiment data, the subject interacts in Unity in a VR scene. In this way, all experiment setup is done by R, which later communicates and controls the environment in Unity as shown in the sequence diagram at the end of this readme. Subject input in the VR scene is going to be performed only by the **right** controller (please check **Input mapping** section). The left controller can be used by the experimenter to guide the subject while wearing the VR goggles.
+This system is comprised of two components: `psychTestR` written in R, the other in Unity. While `psychTestR` collects experimental data, the subject interacts in Unity with a VR scene. All the experimental design is done in R which controls the environment in Unity, as shown in the sequence diagram at the bottom of this readme.
 
-The experiment procedure is composed of 2 blocks: Practice and main block. The practice block is going to use in alphabetic order the stimuli in the `practice` folder. The idea of this block is to allow the subjects to familiarize themselves with the system and receive feedback from the experimenter. Once this block is over, the main block begins. This block is going to use stimuli from the `audio` folder randomly sorted. Feedback from the experimenter is not expected to be provided during this block.
+Subjective input in the VR scene is performed only by the right controller (refer to the Input mapping section). The left controller can be used by the experimenter to guide the subject while wearing the VR goggles.
+
+The experiment procedure is comprised of two blocks. The practice block uses the stimuli in the practice folder sorred by alphabetic order. This block allows the subjects to familiarize with the apparatus and receive feedback from the experimenter. The main block follows the practice one. In this case,  the stimuli from the audio folder is presented in a random permutation fashion. Feedback from the experimenter is not expected to be provided during this block.
 
 ## Requirements
+## OS
+Windows
 ### Hardware
 This system is developed for [HTC Vive Virtual Reality System](https://www.amazon.com/HTC-VIVE-Virtual-Reality-System-pc/dp/B00VF5NT4I). Headphones connected directly to the computer (no through the HTC VIVE headset) is strongly suggested.
 ### Software
@@ -39,7 +43,7 @@ When all experiments are over, run `/Assets/Resources/Collect.R` to collect all 
 ## Input mapping
 ![Alt text](mapping.png?raw=true "Input mapping")
 - **Record:** To record the path, hold the ***trigger*** button. Once it is released, a confirmation screen is going to be displayed.
-- **Confirmation buttons:** To confirm the path drawn, select yes or no in the ***track pad*** of the controller by clicking the top or bottom of it. To avoid a mistake, confirmation should be provided. In other words, to submit or repeat the recording please press the selection 2 times.
+- **Confirmation buttons:** To confirm the path drawn, select yes or no in the ***track pad*** of the controller by clicking the top or bottom of it. To avoid a mistake, confirmation should be provided. In other words, to submit or repeat the recording please press the selection twice.
 - **Repeat:** Press this button to repeat a stimulus.
 - **Change coordinate system:** System illustrates control position with spherical coordinates by default. To display them in the euclidean system and vice-versa, press the ***Grip*** button.
 
