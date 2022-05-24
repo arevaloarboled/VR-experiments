@@ -9,7 +9,7 @@ Subjective input in the VR scene is performed only by the right controller (refe
 The experiment procedure is comprised of two blocks. The practice block uses the stimuli in the practice folder sorred by alphabetic order. This block allows the subjects to familiarize with the apparatus and receive feedback from the experimenter. The main block follows the practice one. In this case,  the stimuli from the audio folder is presented in a random permutation fashion. Feedback from the experimenter is not expected to be provided during this block.
 
 ## Requirements
-## OS
+### OS
 Windows
 ### Hardware
 This system is developed for [HTC Vive Virtual Reality System](https://www.amazon.com/HTC-VIVE-Virtual-Reality-System-pc/dp/B00VF5NT4I). Headphones connected directly to the computer (no through the HTC VIVE headset) is strongly suggested.
