@@ -33,7 +33,7 @@ install.packages("jsonlite")
 ## How to run the experiment
 1. Run **first** the `app.R` script, (be sure you are running the script in the `/Assets/Resources` folder, otherwise experimental data cannot be loaded).
 2. Run the `PerformTest` scene in Unity.
-3. Launch browser to [localhost:3838](localhost:3838). 
+3. Launch browser to [localhost:3838](http://localhost:3838) . 
 4. Input subject information (name, age, hearing problems, etc.)
 
 After this, the practice part begins. Ask the subject to follow the instructions on the screen. Feedback from the experimenter can be provided by using the left controller. After practice is over, proceed to the main block. **Please do not provide any feedback from here.**
