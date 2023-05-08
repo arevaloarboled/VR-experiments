@@ -222,8 +222,8 @@ timeline <- join(questions, practicebefore,practice, experimentbefore, experimen
 make_test(elts = timeline, 
           opt = demo_options(
             title = "Experimental form",
-            admin_password = "arevalo",
-            researcher_email = "jarevalo29@javerianacali.edu.co",
+            admin_password = "password",
+            researcher_email = "<<researcher email>>",
             demo = TRUE
           )
 )
