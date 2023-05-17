@@ -100,12 +100,12 @@ questions <- join(
   
   
   NAFC_page(
-    label = "Sex",
-    prompt = "What is your Sex?",
+    label = "Genre",
+    prompt = "What is your genre?",
     choices = c("Male", "Female"),
     
     on_complete = function(answer, state, ...) {
-      set_global(key = "sex", value = answer,
+      set_global(key = "genre", value = answer,
                  state = state)
     }),
   

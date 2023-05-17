@@ -1,3 +1,3 @@
 # Experiment audio files
 
-Add here practice .wav files
+Add in this directory practice .wav files
